@@ -1,0 +1,13 @@
+pointcloud_to_grid:
+  position_x: 0.0 # center position y
+  position_y: 0.0 # center position y
+  cell_size: 0.5 # size of a grid cell
+  length_x: 80.0 # In meters
+  length_y: 80.0 # In meters
+  intensity_factor: 0.2 # Multiply intensity
+  height_factor: 1.0 # Multiply height
+  cloud_in_topic: "/left_os1/os1_cloud_node/points" # A LIDAR topic to subscribe. Restart needed if it changes.
+  mapi_topic_name: "/lidargrid_i" # Intensity map topic name. Restart needed if it changes.
+  maph_topic_name: "/lidargrid_h" # Height map topic name. Restart needed if it changes.
+  debug: True # publish debug topics too
+
