@@ -3,6 +3,11 @@
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
 #include "nav_msgs/msg/occupancy_grid.hpp"
+#include "sensor_msgs/msg/point_cloud2.hpp"
+
+
+
+
 
 class PointXY {
 public:
@@ -96,3 +101,6 @@ public:
     return cell_size;
   }
 };
+
+
+nav_msgs::msg::OccupancyGrid publisher;
